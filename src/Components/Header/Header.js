@@ -5,7 +5,11 @@ const Header = () => {
     <div>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <img
+            src="https://www.messbud.com/images/logo-full.svg"
+            className="h-8"
+            alt=""
+          />
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
