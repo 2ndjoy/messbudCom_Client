@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
+import * as React from "react";
+import Button from "@mui/material/Button";
+import Header from "./Components/Header/Header";
 
-function App() {
+export default function App() {
   return (
-    <div className="App bg-black">
-      <h1 className="text-slate-100">Hi</h1>
+    <div>
+      <Header></Header>
     </div>
   );
 }
-
-export default App;
