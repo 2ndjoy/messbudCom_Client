@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div>
       <DashBoardLayout></DashBoardLayout>
-      <Outlet></Outlet>
+      {/* <Outlet></Outlet> */}
     </div>
   );
 };

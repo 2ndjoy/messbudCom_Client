@@ -14,10 +14,16 @@ const DashBoardLayout = () => {
         />
         <div className="drawer-content">
           <Outlet></Outlet>
+          <label
+            htmlFor="dashboard-drawer"
+            className="btn btn-primary drawer-button lg:hidden mt-12"
+          >
+            Open Dashboard
+          </label>
         </div>
         <div className="drawer-side">
           <label htmlFor="dashboard-drawer" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-80 text-base-content">
+          <ul className="menu p-4 w-80 bg-white text-base-content">
             {/* <!-- Sidebar content here --> */}
 
             <li>

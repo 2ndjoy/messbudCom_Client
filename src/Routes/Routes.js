@@ -7,6 +7,7 @@ import BillsAndPayables from "../Components/DashBoardComponents/BillsAndPayables
 import Members from "../Components/DashBoardComponents/Members/Members";
 import Settings from "../Components/DashBoardComponents/Settings/Settings";
 import Main from "../Components/LayOut/Main";
+import Profile from "../Components/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/settings",
         element: <Settings />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },
