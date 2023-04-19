@@ -2,7 +2,7 @@ import React from "react";
 
 const MeelSheetTotal = () => {
   return (
-    <div className="grid w-3/4 bg-orange-50 p-3">
+    <div className="grid lg:w-3/4 bg-orange-50 p-3">
       <div className="flex justify-between">
         <div>Total Expenses</div>
         <div>1200/=</div>
