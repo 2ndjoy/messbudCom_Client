@@ -3,7 +3,10 @@ import fullscreen from "../../../assets/icons/fullscreen.svg";
 
 const MealToCook = () => {
   return (
-    <div className="bg-orange-100 flex items-center justify-between text-black  h-24 w-3/4  p-2 rounded">
+    <div
+      style={{ backgroundColor: "#F5EBDF" }}
+      className="flex items-center justify-between text-black  h-24 w-3/4  p-2 rounded"
+    >
       <div>
         <h1 className="text-2xl font-bold">02</h1>
         <p>meal to cook || noon || jan 27 </p>

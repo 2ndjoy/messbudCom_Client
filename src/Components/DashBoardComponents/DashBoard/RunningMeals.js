@@ -3,7 +3,10 @@ import setting from "../../../assets/icons/gear-solid.svg";
 
 const RunningMeals = () => {
   return (
-    <div className="bg-zinc-800 flex items-center  h-24 w-3/4  w-3/4  justify-between text-white p-2 rounded">
+    <div
+      style={{ backgroundColor: "#323543" }}
+      className="flex items-center  h-24 w-3/4  w-3/4  justify-between text-white p-2 rounded"
+    >
       <div>
         <h1 className="text-2xl font-bold">02</h1>
         <p>

@@ -2,7 +2,7 @@ import React from "react";
 
 const BillsTable = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className="overflow-x-auto">
         <table className="table w-full">
           {/* head */}

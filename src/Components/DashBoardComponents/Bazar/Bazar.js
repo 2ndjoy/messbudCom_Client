@@ -7,19 +7,16 @@ import ArchiveButton from "../ArchiveButton/ArchiveButton";
 const Bazar = () => {
   return (
     <>
-      <div className="lg:flex justify-around">
-        <div className="w-3/4 m-3">
-          <BazarTable />
-        </div>
-        <div className="lg:grid w-3/4">
-          <div className=" m-3">
-            <BazarBoard />
-          </div>
-          <div className=" m-3">
-            <BazarNotes />
-          </div>
+      <div className="mealsheeet">
+        <BazarTable />
+
+        <div className="grid gap-3 w-3/4 ml-5">
+          <BazarBoard />
+
+          <BazarNotes />
         </div>
       </div>
+
       <ArchiveButton />
     </>
   );

@@ -2,10 +2,10 @@ import React from "react";
 
 const MealTable = () => {
   return (
-    <div>
+    <div className="w-full">
       {/* Table */}
       <div className="overflow-x-auto">
-        <table className="table w-3/4">
+        <table className="table w-full">
           {/* head */}
           <thead>
             <tr>

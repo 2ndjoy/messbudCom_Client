@@ -1,0 +1,14 @@
+.mealsheeet {
+  display: flex;
+  flex-direction: col-reverse;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .mealsheeet {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 3vw;
+    width: max-content;
+    margin-top: 5vw;
+  }
+}
