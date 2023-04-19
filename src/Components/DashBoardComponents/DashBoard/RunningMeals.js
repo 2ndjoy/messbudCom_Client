@@ -5,7 +5,7 @@ const RunningMeals = () => {
   return (
     <div
       style={{ backgroundColor: "#323543" }}
-      className="flex items-center  h-24 w-3/4  w-3/4  justify-between text-white p-2 rounded"
+      className="flex items-center  h-24  lg:w-3/4 w-4/4  justify-between text-white p-2 rounded"
     >
       <div>
         <h1 className="text-2xl font-bold">02</h1>
