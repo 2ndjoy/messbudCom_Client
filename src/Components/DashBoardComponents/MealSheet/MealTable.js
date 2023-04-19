@@ -2,11 +2,10 @@ import React from "react";
 
 const MealTable = () => {
   return (
-    <div className="w-full">
+    <div className="">
       {/* Table */}
-      <div className="overflow-x-auto">
-        <table className="table w-full">
-          {/* head */}
+      <div className="overflow-x-auto scroll-m-0">
+        <table className="table table-compact w-full">
           <thead>
             <tr>
               <th>Date</th>
