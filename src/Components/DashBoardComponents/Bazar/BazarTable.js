@@ -2,7 +2,7 @@ import React from "react";
 
 const BazarTable = () => {
   return (
-    <div className="lg:ml-3 lg:w-full ml-14">
+    <div className="lg:ml-3 lg:mt-0 mt-5 lg:w-full ml-14">
       <div className="overflow-x-auto">
         <table className="table table-compact lg:w-full">
           <thead>

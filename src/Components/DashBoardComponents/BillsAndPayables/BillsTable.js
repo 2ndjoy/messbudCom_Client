@@ -2,10 +2,9 @@ import React from "react";
 
 const BillsTable = () => {
   return (
-    <div className="lg:ml-3 lg:w-full ml-14">
+    <div className="lg:ml-3 lg:mt-0 mt-5 lg:w-full ml-14">
       <div className="overflow-x-auto">
         <table className="table table-compact lg:w-full">
-          {/* head */}
           <thead>
             <tr>
               <th>Title</th>

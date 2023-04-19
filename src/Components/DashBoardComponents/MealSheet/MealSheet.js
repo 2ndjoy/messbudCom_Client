@@ -8,9 +8,9 @@ import "./MealSheet.css";
 const MealSheet = () => {
   return (
     <>
-      <div className="mealsheeet">
+      <div className="mealsheeet mt-9">
         <MealTable />
-        <div className="grid gap-3 w-3/4 ml-5">
+        <div className="grid gap-3 lg:w-3/4 w-full ml-5">
           <MealBoard />
           <MeelSheetTotal />
         </div>

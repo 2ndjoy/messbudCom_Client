@@ -10,7 +10,7 @@ const BillsAndPayables = () => {
       <div className="mealsheeet">
         <BillsTable />
 
-        <div className="grid gap-3 w-3/4 ml-5">
+        <div className="grid gap-3 w-3/4 lg:ml-5 lg:mt-0 mt-9 ml-12">
           <BazarBoard />
 
           <BazarNotes />
