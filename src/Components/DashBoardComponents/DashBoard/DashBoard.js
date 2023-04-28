@@ -7,15 +7,19 @@ import DashBoardBanner from "./DashBoardBanner";
 
 const DashBoard = () => {
   return (
-    <div className="grid my-9">
-      <div className="grid lg:grid-cols-2 lg:ml-0 ml-11 gap-6">
-        <RunningMeals />
-        <MealToCook />
-        <MealRate />
-        <MyExpenses />
+    <>
+      <p className="lg:text-left text-center text-xl font-bold">Dashboard</p>
+
+      <div className="grid my-9">
+        <div className="grid lg:grid-cols-2 lg:mx-0 mx-3 gap-6 mb-9">
+          <RunningMeals />
+          <MealToCook />
+          <MealRate />
+          <MyExpenses />
+        </div>
+        <DashBoardBanner />
       </div>
-      <DashBoardBanner />
-    </div>
+    </>
   );
 };
 

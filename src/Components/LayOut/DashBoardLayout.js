@@ -1,6 +1,14 @@
 import React from "react";
 import Header from "../Header/Header";
 import { Link, Outlet } from "react-router-dom";
+import { RxDashboard } from "react-icons/rx";
+import { FiSettings } from "react-icons/fi";
+import {
+  BsFileEarmarkSpreadsheet,
+  BsHandbag,
+  BsFileSpreadsheetFill,
+  BsPeople,
+} from "react-icons/bs";
 
 const DashBoardLayout = () => {
   return (
@@ -21,22 +29,40 @@ const DashBoardLayout = () => {
             {/* <!-- Sidebar content here --> */}
 
             <li>
-              <Link to="/Dashboard"> Dashboard</Link>
+              <Link to="/Dashboard">
+                <RxDashboard /> Dashboard
+              </Link>
             </li>
             <li>
-              <Link to="/mealsheet"> Meal Sheet</Link>
+              <Link to="/mealsheet">
+                <BsFileEarmarkSpreadsheet /> Meal Sheet
+              </Link>
             </li>
             <li>
-              <Link to="/bazar"> Bazar</Link>
+              <Link to="/bazar">
+                {" "}
+                <BsHandbag />
+                Bazar
+              </Link>
             </li>
             <li>
-              <Link to="/billsandpays"> Bills & Payables</Link>
+              <Link to="/billsandpays">
+                {" "}
+                <BsFileSpreadsheetFill />
+                Bills & Payables
+              </Link>
             </li>
             <li>
-              <Link to="/members"> Members</Link>
+              <Link to="/members">
+                <BsPeople /> Members
+              </Link>
             </li>
             <li>
-              <Link to="/settings"> Settings</Link>
+              <Link to="/settings">
+                {" "}
+                <FiSettings />
+                Settings
+              </Link>
             </li>
           </ul>
         </div>

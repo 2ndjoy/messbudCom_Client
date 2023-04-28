@@ -1,6 +1,6 @@
 import React from "react";
 import pause from "../../../assets/icons/circle-pause-solid.svg";
-
+import { BsBucket } from "react-icons/bs";
 const BazarBoard = () => {
   return (
     <div
@@ -13,12 +13,15 @@ const BazarBoard = () => {
         <p>Bazar, grocery and others.</p>
       </div>
       <button>
-        <img
+        <p className="text-2xl p-2 text-black bg-white rounded-full">
+          <BsBucket />
+        </p>
+        {/* <img
           src={pause}
           style={{ backgroundColor: "#F3E7D6" }}
           className="h-7 rounded-full w-full"
           alt=""
-        />
+        /> */}
       </button>
     </div>
   );

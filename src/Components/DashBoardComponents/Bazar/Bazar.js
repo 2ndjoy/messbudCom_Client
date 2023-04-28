@@ -7,10 +7,11 @@ import ArchiveButton from "../ArchiveButton/ArchiveButton";
 const Bazar = () => {
   return (
     <>
-      <div className="mealsheeet">
+      <p className="lg:text-left text-center text-xl font-bold">Bazar</p>
+      <div className="mealsheeet  mt-9">
         <BazarTable />
 
-        <div className="grid gap-3 w-3/4 lg:ml-5 lg:mt-0 mt-9 ml-12">
+        <div className="grid gap-3 w-3/4 lg:ml-5 ml-12">
           <BazarBoard />
 
           <BazarNotes />

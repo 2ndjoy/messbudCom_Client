@@ -1,7 +1,12 @@
 import React from "react";
 
 const Settings = () => {
-  return <div>This is Settings</div>;
+  return (
+    <>
+      <p className="lg:text-left text-center text-xl font-bold">Meal Sheet</p>
+      <div>This is Settings</div>;
+    </>
+  );
 };
 
 export default Settings;
