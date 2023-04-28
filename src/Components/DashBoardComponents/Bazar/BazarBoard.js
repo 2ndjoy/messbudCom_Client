@@ -1,5 +1,4 @@
 import React from "react";
-import pause from "../../../assets/icons/circle-pause-solid.svg";
 import { BsBucket } from "react-icons/bs";
 const BazarBoard = () => {
   return (
@@ -13,15 +12,36 @@ const BazarBoard = () => {
         <p>Bazar, grocery and others.</p>
       </div>
       <button>
-        <p className="text-2xl p-2 text-black bg-white rounded-full">
-          <BsBucket />
-        </p>
-        {/* <img
-          src={pause}
-          style={{ backgroundColor: "#F3E7D6" }}
-          className="h-7 rounded-full w-full"
-          alt=""
-        /> */}
+        <label htmlFor="my-modal-5" className="">
+          <p className="text-2xl p-2 text-black bg-white rounded-full">
+            <BsBucket />
+          </p>
+        </label>
+
+        {/* Put this part before </body> tag */}
+        <input type="checkbox" id="my-modal-5" className="modal-toggle" />
+        <div className="modal">
+          <div className="modal-box relative">
+            <label
+              htmlFor="my-modal-5"
+              className="btn btn-sm btn-circle absolute right-2 top-2"
+            >
+              ✕
+            </label>
+            <h3 className="text-lg text-black font-bold">
+              Congratulations random Internet user!
+            </h3>
+            <p className="py-4 text-black ">
+              You've been selected for a chance to get one year of subscription
+              to use Wikipedia for free!
+            </p>
+            <div className="modal-action">
+              <label htmlFor="my-modal-5" className="btn">
+                Yay!
+              </label>
+            </div>
+          </div>
+        </div>
       </button>
     </div>
   );

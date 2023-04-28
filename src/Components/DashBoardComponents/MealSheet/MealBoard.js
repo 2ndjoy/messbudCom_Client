@@ -1,7 +1,9 @@
-import React from "react";
-import { BsFillPauseCircleFill } from "react-icons/bs";
+import React, { useState } from "react";
+import { BsFillPauseCircleFill, BsPlayCircleFill } from "react-icons/bs";
 
 const MealBoard = () => {
+  const [play, setPlay] = useState(true);
+
   return (
     <div
       style={{ backgroundColor: "#333542", color: "#FEFEFF" }}
@@ -9,13 +11,20 @@ const MealBoard = () => {
     >
       <div className="">
         <small>Your meal is </small> <br />
-        <h1 className="text-teal-400 text-4xl">Running</h1>
+        {play ? (
+          <h1 className="text-teal-400 text-4xl">Running</h1>
+        ) : (
+          <h1 className="text-teal-400 text-4xl">Paused</h1>
+        )}
       </div>
-      <button>
+      <button
+        onClick={() => {
+          setPlay(!play);
+        }}
+      >
         <p className="text-2xl p-2 rounded-full">
-          <BsFillPauseCircleFill />
+          {play ? <BsFillPauseCircleFill /> : <BsPlayCircleFill />}
         </p>
-        {/* <img src={pause} className="h-7 bg-white rounded-full " alt="" /> */}
       </button>
     </div>
   );
