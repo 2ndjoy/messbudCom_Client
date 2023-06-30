@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FiSettings } from "react-icons/fi";
 
 const RunningMeals = () => {
+  const [myMeal, setMyMeal] = useState(0);
+  const increaseMeal = () => {
+    setMyMeal(myMeal + 1);
+  };
+  const decreaseMeal = () => {
+    if (myMeal === 0) {
+      setMyMeal(myMeal);
+    } else {
+      setMyMeal(myMeal - 1);
+    }
+  };
+
+  const okaay = () => {
+    alert(myMeal);
+  };
   return (
     <div
       style={{ backgroundColor: "#323543", color: "#F4EADF" }}
       className="flex items-center  h-24  lg:w-3/4 w-4/4  justify-between p-2 rounded"
     >
       <div>
-        <h1 className="text-2xl font-bold">02</h1>
+        <h1 className="text-2xl font-bold">{myMeal}</h1>
         <p>
           my meal today || <span className="text-teal-400">running</span>
         </p>
@@ -34,16 +49,25 @@ const RunningMeals = () => {
             >
               ✕
             </label>
-            <h3 className="text-lg text-black font-bold">
-              Congratulations random Internet user!
-            </h3>
-            <p className="py-4 text-black ">
-              You've been selected for a chance to get one year of subscription
-              to use Wikipedia for free!
+            <h3 className="text-lg text-black font-bold">Set your meal</h3>
+            <p className="py-4 flex justify-center gap-3 text-black items-center">
+              <button
+                onClick={increaseMeal}
+                className="bg-green-600 p-2 rounded-lg"
+              >
+                +
+              </button>
+              <p>{myMeal}</p>
+              <button
+                onClick={decreaseMeal}
+                className="bg-blue-600 p-2 rounded-lg"
+              >
+                -
+              </button>
             </p>
             <div className="modal-action">
-              <label htmlFor="my-modal-3" className="btn">
-                Yay!
+              <label onClick={okaay} htmlFor="my-modal-3" className="btn">
+                Okay
               </label>
             </div>
           </div>
